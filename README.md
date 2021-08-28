@@ -1,4 +1,4 @@
-# GroupID-Datasetname
+# 026-Pokémon Index
 Datasets from: [Pokémon Index](https://www.kaggle.com/brendan45774/pokmon-index-database?select=pokemon.csv)
 
 ## Objective
