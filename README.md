@@ -55,8 +55,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 - ATCHARA TRAN-U-RAIKUL
 - JATAWAT XIE (Git: [safesit23](https://github.com/safesit23))
-# 026-Pokémon Index
-Datasets from: [Pokémon Index](https://www.kaggle.com/brendan45774/pokmon-index-database?select=pokemon.csv)
+
 
 
 
