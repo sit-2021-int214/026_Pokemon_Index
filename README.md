@@ -35,7 +35,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 ### Important Files in Repository
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
-- [pokemonIndex_original.csv](https://github.com/sit-2021-int214/026_Pokemon_Index/blob/main/pokemonIndex_original.csv): Original Dataset
+- [pokemonIndex_original.csv](./pokemonIndex_original.csv): Original Dataset
 - [products_clean.csv](./products_original.csv): Clean Dataset
 
 ### References
