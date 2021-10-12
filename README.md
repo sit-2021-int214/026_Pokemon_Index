@@ -2,7 +2,7 @@
 
 Original Datasets from: [Pokémon Index](https://www.kaggle.com/brendan45774/pokmon-index-database?select=pokemon.csv)
 
-### About's Products Datasets
+### About's Pokémon Index Datasets
 
 This dataset is about all Pokemon characters. with the name of the character, Character type Attack, Defense, Speed, and HP stats
 
