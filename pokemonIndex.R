@@ -5,30 +5,22 @@ library(assertive)
 library(readr)
 
 # Step 1: Load data
-survey214 <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/000-INT214Survey/main/SurveyINT214_original.csv")
+pokemon <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/026_Pokemon_Index/main/pokemonIndex_original.csv")
+View(pokemon)
+
 # Step 2: Change to tibble
-survey214 <- as_tibble(survey214)
-glimpse(survey214)
+pokemon <- as_tibble(pokemon)
+glimpse(pokemon)
 
 # Step 3: TransformData
-survey214 <- survey214 %>% rename(
-  timestamp = ประทับเวลา,
-  skill_excel = X1..ทักษะการใช้งาน.Excel.Google.Sheet,
-  skill_r = X2..ทักษะภาษา.R,
-  skill_stat = X3..ประเมินตัวเองหน่อย.คิดว่ามีความรู้เกี่ยวกับสถิติอยู่ขั้นไหน,
-  int214_level = X4..คิดว่า.INT214.ที่กำลังจะเรียนมีความง่าย.ยากเพียงใด,
-  int214_att = X5..คิดว่า.INT214.น่าเรียนมากน้อยแค่ไหน,
-  std_ready = X6..นักศึกษามีความพร้อมที่จะเรียนมากน้อยเพียงใด,
-  music_genres = แนวเพลงที่ชอบฟัง,
-  salary = เงินเดือนที่อยากได้เมื่อเรียนจบ..พิมพ์เป็นตัวเลข.,
-  sec = เรียน.Sec.ไหน,
-  gender = เพศ,
-  birthday = วันเดือนปีเกิด,
-  program = มัธยมปลาย.เรียนสายการเรียนอะไร
-)
+#rename column
+pokemon <- pokemon %>% rename(Number=ï..Number)
+View(pokemon)
 
 # Step 4: Cleaning Data
 ## Change data type
+pokemon$Number <- pokemon$Number %>% str_remove("Â")
+pokemon$Number <- pokemon$Number %>% str_remove("ย") 
 survey214$skill_excel <- as.factor(survey214$skill_excel)
 survey214$skill_r <- as.factor(survey214$skill_r)
 
