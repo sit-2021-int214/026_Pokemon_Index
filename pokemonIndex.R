@@ -14,13 +14,16 @@ glimpse(pokemon)
 
 # Step 3: TransformData
 #rename column
-pokemon <- pokemon %>% rename(Number=ï..Number)
+pokemon <- pokemon %>% rename(Pokemon_Number=ï..Number)
+pokemon <- pokemon %>% rename(Special_Attack=Special.Attack)
+pokemon <- pokemon %>% rename(Special_Defense=Special.Defense)
 View(pokemon)
 
 # Step 4: Cleaning Data
 ## Change data type
-pokemon$Number <- pokemon$Number %>% str_remove("Â")
-pokemon$Number <- pokemon$Number %>% str_remove("ย") 
+pokemon$Pokemon_Number <- pokemon$Pokemon_Numbr %>% str_remove("Â")
+pokemon$Pokemon_Number <- pokemon$Pokemon_Number %>% str_remove("ย")
+
 survey214$skill_excel <- as.factor(survey214$skill_excel)
 survey214$skill_r <- as.factor(survey214$skill_r)
 
@@ -46,4 +49,5 @@ survey214$sec <- survey214$sec %>% str_sub(1,5) %>% factor
 summary(survey214$sec)
 
 ##Checkpoint 1
-write_csv(survey214,file = "../datasets/survey214_v1.csv")
+
+write_csv(pokemon,file = "C:/Users/PHOP009/Desktop/R-INT214/pokemon_cleandata.csv")
