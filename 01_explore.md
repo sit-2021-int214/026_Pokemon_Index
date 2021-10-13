@@ -23,21 +23,24 @@ Dataset from [anime_clean.csv](./pokemonIndex_original.csv)
 #library
 library(dplyr)
 #dataset
-pokemon <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/026_Pokemon_Index/main/pokemon_cleandata.csv")
-
+anime <- read.csv("D:/IT/IT Y.2/INT214 Stat for IT/R/Midterm assignment/anime_clean.csv)
 ```
 
 ## 1.
 
 Explain here
 
-```
-```
+pokemon %>% filter( pokemon$Type == "DARK",pokemon$Total > 600)
 
 Result
 
 ```
-
+# A tibble: 3 x 10
+  Pokemon_Number Name           Type  Total    HP Attack Defense Special_Attack Special_Defense Speed
+  <chr>          <chr>          <chr> <int> <int>  <int>   <int>          <int>           <int> <int>
+1 130.1          Mega Gyarados  DARK    640    95    155     109             70             130    81
+2 248.1          Mega Tyranitar DARK    700   100    164     150             95             120    71
+3 717            Yveltal        DARK    680   126    131      95            131              98    99
 ```
 
 
@@ -99,13 +102,7 @@ Result
 ## 6.
 Explain
 ```
-pokemon  %>% select(Name,Total,Speed)%>% filter(pokemon$Total > 600,pokemon$Speed==min(pokemon$Speed[pokemon$Total>600]))%>%distinct 
 ```
 Result
 ```
-> pokemon  %>% select(Name,Total,Speed)%>% filter(pokemon$Total > 600,pokemon$Speed==min(pokemon$Speed[pokemon$Total>600]))%>%distinct
-# A tibble: 1 x 3
-  Name          Total Speed
-  <chr>         <int> <int>
-1 Mega Ampharos   610    45
 ```
