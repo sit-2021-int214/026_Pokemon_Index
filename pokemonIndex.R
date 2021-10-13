@@ -27,27 +27,32 @@ pokemon$Pokemon_Number <- pokemon$Pokemon_Number %>% str_remove("ย")
 survey214$skill_excel <- as.factor(survey214$skill_excel)
 survey214$skill_r <- as.factor(survey214$skill_r)
 
-## skill_stat by using replace (hard) --------------
-str_0 <- "Level 0 \\(ไม่มีความรู้เลย คืนครูคณิตม.ปลายไปหมดแล้ว\\)"
-str_1 <- "Level 1 \\(พอจำได้เรื่องการหาค่ากลางได้เช่น Average, Median, mode\\)"
-str_2 <- "Level 2 \\(พอจำ concept จากม.ปลายได้เช่น s.d., z-score, normal distribution, variance\\)"
-str_3 <- "Level 3 \\(จำได้ดี ถ้ามีสูตรมาสามารถคำนวณหาค่าได้ทันที\\)"
-survey214$skill_stat %>% str_replace_all(str_0,"Level 0")
-survey214$skill_stat %>% str_replace_all(str_1,"Level 1") 
-survey214$skill_stat %>% str_replace_all(str_2,"Level 2")
-survey214$skill_stat %>% str_replace_all(str_3,"Level 3")
-#-------------
+# 1. find the dteel's pokemon(s)that have a total(power) morethan 600 
+pokemon %>% filter(pokemon$Type == "DARK",pokemon$Total > 600)
 
-## skill_stat by using substring
-survey214$skill_stat %>% str_sub(1,7)
-survey214$skill_stat <- survey214$skill_stat %>% str_sub(1,7) %>% factor()
-summary(survey214$skill_stat)
+# 2. Which pokemon type have the gratest average of special defense ?
+distinct(pokemon,pokemon$Type, .keep_all = FALSE)
+pokemonaverage <- aggregate(pokemon$Special_Defense, list(pokemon$Type), FUN=mean)
+pokemonaverage <- pokemonaverage %>% rename(Type=Group.1,Average_Speed_Defense = x)
+pokemonaverage %>% filter(pokemonaverage$Average_Speed_Defense == max(pokemonaverage$Average_Speed_Defense))
 
-## sec by using substring
-survey214$sec %>% str_sub(1,5)
-survey214$sec <- survey214$sec %>% str_sub(1,5) %>% factor
-summary(survey214$sec)
+# 3. which pokemon have a highest and lowest speed and what the diffrent of two of them ?
+pokemon %>% select(Name,Speed) %>% filter(pokemon$Speed == min(pokemon$Speed)) 
+pokemon %>% select(Name,Speed) %>% filter(pokemon$Speed == max(pokemon$Speed))
+max(pokemon$Speed)-min(pokemon$Speed)
+
+# 4. From the given index which pokemons types have a highest amount? and how much is it ?
+pokemonType <- data.frame(table(pokemon$Type))
+pokemonType <- pokemonType %>% rename(Type=Var1)
+pokemonType <- pokemonType %>% rename(Amount=Freq)
+pokemonType %>% filter(Amount == max(Amount))
+
+# 5. which pokemon(s) have a hp is morethan and speed lower than 50 ? what is his/her type ? 
+pokemon %>% select(Name,Type,Speed,HP) %>% filter( pokemon$Speed < 50 ,pokemon$HP > 80) 
+
+# 6. Find the lowest speed pokemon that total(power) is morethan 600
+pokemon  %>% select(Name,Total,Speed)%>% filter(pokemon$Total > 600,pokemon$Speed==min(pokemon$Speed[pokemon$Total>600]))%>%distinct
+
 
 ##Checkpoint 1
-
 write_csv(pokemon,file = "C:/Users/PHOP009/Desktop/R-INT214/pokemon_cleandata.csv")
