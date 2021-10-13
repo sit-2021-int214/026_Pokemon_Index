@@ -31,12 +31,18 @@ anime <- read.csv("D:/IT/IT Y.2/INT214 Stat for IT/R/Midterm assignment/anime_cl
 Explain here
 
 ```
+pokemon %>% filter( pokemon$Type == "DARK",pokemon$Total > 600)
 ```
 
 Result
 
 ```
-
+# A tibble: 3 x 10
+  Pokemon_Number Name           Type  Total    HP Attack Defense Special_Attack Special_Defense Speed
+  <chr>          <chr>          <chr> <int> <int>  <int>   <int>          <int>           <int> <int>
+1 130.1          Mega Gyarados  DARK    640    95    155     109             70             130    81
+2 248.1          Mega Tyranitar DARK    700   100    164     150             95             120    71
+3 717            Yveltal        DARK    680   126    131      95            131              98    99
 ```
 
 
@@ -44,10 +50,15 @@ Result
 
 Explain here
 ```
+distinct(pokemon,pokemon$Type, .keep_all = FALSE)
+pokemonAverage <- aggregate(pokemon$Special_Defense, list(pokemon$Type), FUN=mean)
+pokemonAverage <- pokemonAverage %>% rename(Type=Group.1,Average_Speed_Defense = x)
+pokemonAverage %>% filter(pokemonAverage$Average_Speed_Defense == max(pokemonAverage$Average_Speed_Defense))
 ```
 Result
 ```
-
+     Type Average_Speed_Defense
+1 PSYCHIC              84.37349
 ```
 
 
