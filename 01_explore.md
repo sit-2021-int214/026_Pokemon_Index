@@ -107,7 +107,13 @@ Result
 ## 6.
 Explain
 ```
+pokemon  %>% select(Name,Total,Speed)%>% filter(pokemon$Total > 600,pokemon$Speed==min(pokemon$Speed[pokemon$Total>600]))%>%distinct
 ```
 Result
 ```
+> pokemon  %>% select(Name,Total,Speed)%>% filter(pokemon$Total > 600,pokemon$Speed==min(pokemon$Speed[pokemon$Total>600]))%>%distinct
+# A tibble: 1 x 3
+  Name          Total Speed
+  <chr>         <int> <int>
+1 Mega Ampharos   610    45
 ```
