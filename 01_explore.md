@@ -31,7 +31,7 @@ anime <- read.csv("D:/IT/IT Y.2/INT214 Stat for IT/R/Midterm assignment/anime_cl
 Explain here
 
 ```
-
+find the dteel's pokemon(s)that have a total(power) morethan 600 
 ```
 
 Result
@@ -45,7 +45,7 @@ Result
 
 Explain here
 ```
-
+Which pokemon type have the gratest average of special defense ?
 ```
 Result
 ```
@@ -57,6 +57,7 @@ Result
 
 Explain here
 ```
+which pokemon have a highest and lowest speed and what the diffrent of two of them ?
 ```
 Result
 ```
@@ -65,6 +66,7 @@ Result
 ## 4.
 Explain
 ```
+From the given index which pokemons types have a highest amount? and how much is it ?
 ```
 Result
 ```
@@ -73,6 +75,7 @@ Result
 ## 5. 
 Explain
 ```
+which pokemon(s) have a total(power) morethan 600 and speed lower than 50 ?
 ```
 Result
 ```
@@ -81,6 +84,7 @@ Result
 ## 6.
 Explain
 ```
+Find the lowest speed pokemon that total(power) is morethan 600
 ```
 Result
 ```
