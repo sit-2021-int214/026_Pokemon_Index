@@ -75,7 +75,7 @@ Result
 ## 5. 
 Explain
 ```
-which pokemon(s) have a total(power) morethan 600 and speed lower than 50 ?
+which pokemon(s) have a hp is morethan and speed lower than 50 ?
 ```
 Result
 ```
