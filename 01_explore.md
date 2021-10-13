@@ -29,9 +29,9 @@ anime <- read.csv("D:/IT/IT Y.2/INT214 Stat for IT/R/Midterm assignment/anime_cl
 ## 1.
 
 Explain here
-
+```
 pokemon %>% filter( pokemon$Type == "DARK",pokemon$Total > 600)
-
+```
 Result
 
 ```
