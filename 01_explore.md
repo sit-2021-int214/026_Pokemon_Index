@@ -10,12 +10,12 @@ Dataset from [anime_clean.csv](./pokemonIndex_original.csv)
 
 ## Define a question
 
-1.
-2.
-3.
-4.
-5.
-6.
+1. find the dteel's pokemon(s)that have a total(power) morethan 600 
+2. Which pokemon type have the gratest average of special defense ?
+3. which pokemon have a highest and lowest speed and what the diffrent of two of them ?
+4. From the given index which pokemons types have a highest amount? and how much is it ?
+5. which pokemon(s) have a hp is morethan and speed lower than 50 ? what is his/her type ? 
+6. Find the lowest speed pokemon that total(power) is morethan 600
 
 ## Step 0 Loading library and dataset
 
@@ -31,7 +31,6 @@ anime <- read.csv("D:/IT/IT Y.2/INT214 Stat for IT/R/Midterm assignment/anime_cl
 Explain here
 
 ```
-find the dteel's pokemon(s)that have a total(power) morethan 600 
 ```
 
 Result
@@ -45,7 +44,6 @@ Result
 
 Explain here
 ```
-Which pokemon type have the gratest average of special defense ?
 ```
 Result
 ```
@@ -57,7 +55,6 @@ Result
 
 Explain here
 ```
-which pokemon have a highest and lowest speed and what the diffrent of two of them ?
 ```
 Result
 ```
@@ -66,7 +63,6 @@ Result
 ## 4.
 Explain
 ```
-From the given index which pokemons types have a highest amount? and how much is it ?
 ```
 Result
 ```
@@ -75,7 +71,6 @@ Result
 ## 5. 
 Explain
 ```
-which pokemon(s) have a hp is morethan and speed lower than 50 ? what is his/her type ? 
 ```
 Result
 ```
@@ -84,7 +79,6 @@ Result
 ## 6.
 Explain
 ```
-Find the lowest speed pokemon that total(power) is morethan 600
 ```
 Result
 ```
