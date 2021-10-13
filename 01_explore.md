@@ -23,7 +23,7 @@ Dataset from [anime_clean.csv](./pokemonIndex_original.csv)
 #library
 library(dplyr)
 #dataset
-pokemon <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/026_Pokemon_Index/main/pokemonIndex_original.csv")
+pokemon <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/026_Pokemon_Index/main/pokemon_cleandata.csv")
 
 ```
 
