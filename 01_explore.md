@@ -48,10 +48,15 @@ Result
 
 Explain here
 ```
+distinct(pokemon,pokemon$Type, .keep_all = FALSE)
+pokemonAverage <- aggregate(pokemon$Special_Defense, list(pokemon$Type), FUN=mean)
+pokemonAverage <- pokemonAverage %>% rename(Type=Group.1,Average_Speed_Defense = x)
+pokemonAverage %>% filter(pokemonAverage$Average_Speed_Defense == max(pokemonAverage$Average_Speed_Defense))
 ```
 Result
 ```
-
+     Type Average_Speed_Defense
+1 PSYCHIC              84.37349
 ```
 
 
