@@ -55,9 +55,28 @@ Result
 
 Explain here
 ```
+pokemon %>% select(Name,Speed) %>% filter(pokemon$Speed == min(pokemon$Speed))
+pokemon %>% select(Name,Speed) %>% filter(pokemon$Speed == max(pokemon$Speed))
+
+max(pokemon$Speed)-min(pokemon$Speed)
 ```
 Result
 ```
+> pokemon %>% select(Name,Speed) %>% filter(pokemon$Speed == min(pokemon$Speed))
+# A tibble: 3 x 2
+  Name     Speed
+  <chr>    <int>
+1 Shuckle      5
+2 Shuckle      5
+3 Munchlax     5
+> pokemon %>% select(Name,Speed) %>% filter(pokemon$Speed == max(pokemon$Speed))
+# A tibble: 1 x 2
+  Name                Speed
+  <chr>               <int>
+1 Deoxys- Speed Forme   180
+> 
+> max(pokemon$Speed)-min(pokemon$Speed)
+[1] 175
 ```
 
 ## 4.
