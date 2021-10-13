@@ -75,7 +75,7 @@ Result
 ## 5. 
 Explain
 ```
-which pokemon(s) have a hp is morethan and speed lower than 50 ?
+which pokemon(s) have a hp is morethan and speed lower than 50 ? what is his/her type ? 
 ```
 Result
 ```
