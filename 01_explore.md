@@ -6,7 +6,7 @@ Dataset from [pokemon_clean.csv](./pokemon_cleandata.csv)
 ### My Step
 1. Define a questionCancel changes
 2. Loading Library and dataset
-3. finding the answer (result) from the given question
+3. Finding the answer (result) from the given question
 
 ## Define a question
 
@@ -71,7 +71,6 @@ max(pokemon$Speed)-min(pokemon$Speed)
 ```
 Result
 ```
-> pokemon %>% select(Name,Speed) %>% filter(pokemon$Speed == min(pokemon$Speed))
 # A tibble: 3 x 2
   Name     Speed
   <chr>    <int>
@@ -111,7 +110,6 @@ pokemon  %>% select(Name,Total,Speed)%>% filter(pokemon$Total > 600,pokemon$Spee
 ```
 Result
 ```
-> pokemon  %>% select(Name,Total,Speed)%>% filter(pokemon$Total > 600,pokemon$Speed==min(pokemon$Speed[pokemon$Total>600]))%>%distinct
 # A tibble: 1 x 3
   Name          Total Speed
   <chr>         <int> <int>
