@@ -6,7 +6,8 @@ Dataset from [pokemon_clean.csv](./pokemon_cleandata.csv)
 ### My Step
 1. Define a questionCancel changes
 2. Loading Library and dataset
-3. Finding the answer (result) from the given question
+3. Finding the answer (result) from the given questions
+4. Summarize the results and re-check for correact answers
 
 ## Define a question
 
