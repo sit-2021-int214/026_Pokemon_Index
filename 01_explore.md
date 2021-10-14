@@ -1,6 +1,6 @@
 # Pokémon Index Dataset
 
-Dataset from [anime_clean.csv](./pokemonIndex_original.csv)
+Dataset from [pokemon_clean.csv](./pokemon_cleandata.csv)
 
 
 ### My Step
