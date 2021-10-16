@@ -12,7 +12,7 @@ Dataset from [pokemon_clean.csv](./pokemon_cleandata.csv)
 
 ## Define a question
 
-1. find the dteel's pokemon(s)that have a total(power) morethan 600 
+1. find the dark's pokemon(s)that have a total(power) morethan 600 
 2. Which pokemon type have the gratest average of special defense ?
 3. which pokemon have a highest and lowest speed and what the diffrent of two of them ?
 4. From the given index which pokemons types have a highest amount? and how much is it ?
