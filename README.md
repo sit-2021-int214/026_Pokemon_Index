@@ -8,10 +8,10 @@ This dataset is about all Pokemon characters. with the name of the character, Ch
 
 ## Overview
 
-กลุ่มของเราเลือกข้อมูลชุดนี้เพราะต้องการศึกาาลักษณะ และความสามารถของโปเกม่อนแต่ละตัว
-ว่าโปแกมม่อนแต่ละตัวนั้นมีค่าพลังต่าง ๆ มากน้อยขนาดไหน รวมถ฿งประเภทของโปเกม่อนแต่ละตัวด้วย
-นอกจากจะสามารถศึกษาข้อมูลของโปเกม่อนแต่ละตัวแล้ว
-ข้อมูลชุดนี้ยังสามารถศึกษาข้อมูลโปเกม่อนอ้างอิงจากประเภทหรือธาตุของแต่ละตัวได้อีกด้วย
+กลุ่มของเราเลือกข้อมูลชุดนี้เพราะต้องการศึกษาลักษณะ และความสามารถของโปเกมอนแต่ละตัว
+ว่าโปเกมอนแต่ละตัวนั้นมีค่าพลังต่าง ๆ มากน้อยขนาดไหน รวมถึงประเภทของโปเกมอนแต่ละตัวด้วย
+นอกจากจะสามารถศึกษาข้อมูลของโปเกมอนแต่ละตัวแล้ว
+ข้อมูลชุดนี้ยังสามารถศึกษาข้อมูลโปเกมอนอ้างอิงจากประเภทหรือธาตุของแต่ละตัวได้อีกด้วย
 
 ### Steps
 
@@ -38,7 +38,7 @@ This dataset is about all Pokemon characters. with the name of the character, Ch
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
 - [pokemonIndex_original.csv](./pokemonIndex_original.csv): Original Dataset
-- [products_clean.csv](./products_original.csv): Clean Dataset
+- [pokemon_clean.csv](./pokemon_clean.csv): Clean Dataset
 
 ### References
 
@@ -58,11 +58,3 @@ https://www.kaggle.com/brendan45774/pokmon-index-database?select=pokemon.csv
 
 - ATCHARA TRAN-U-RAIKUL
 - JATAWAT XIE (Git: [safesit23](https://github.com/safesit23))
-
-
-
-
-
-
-
-
