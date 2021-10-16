@@ -100,11 +100,10 @@ Result
 ## 4.
 Explain
 ```
-pokemonType <- data.frame(table(pokemon$Type)) #สร้าง dataframe เพื่อเเยกข้อมูลเเละรู้จำนวนของเเต่ละ Type
-pokemonType  <- pokemonType %>% rename(Type=Var1) #rename Type
-pokemonType  <- pokemonType %>% rename(Amount=Freq) #rename Type
-pokemonType %>% filter(Amount == max(Amount)) #เลือกเฉพาะข้อมูลที่มีจำนวนมากที่สุด
-
+pokemonType <- data.frame(table(pokemon$Type)) 
+pokemonType  <- pokemonType %>% rename(Type=Var1) 
+pokemonType  <- pokemonType %>% rename(Amount=Freq) 
+pokemonType %>% filter(Amount == max(Amount)) 
 ```
 Result
 ```
@@ -116,9 +115,6 @@ Result
 Explain
 ```
 pokemon %>% select(Name,Type,Speed,HP) %>% filter( pokemon$Speed < 50 ,pokemon$HP > 80) 
-#เลือกเเสดงข้อมูลเฉพาะคอลัมน์ Name,Type,Speed,HP 
-#เลือกข้อมูลที่มี NameSpeed<50,HP>80
-
 ```
 Result
 ```
