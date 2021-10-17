@@ -31,9 +31,34 @@ library(stringr)
 pokemon <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/026_Pokemon_Index/main/pokemonIndex_original.csv")
 ```
 
-## cleaning data
+## Cleaning data
 
 ```
+colnames(pokemon)
+glimpse(pokemon)
+
+pokemon <- pokemon %>% rename(Pokemon_Number=ï..Number,Special_Attack=Special.Attack,Special_Defense=Special.Defense)
+
+pokemon$Pokemon_Number <- pokemon$Pokemon_Number %>% str_remove("Â")
+pokemon$Pokemon_Number <- pokemon$Pokemon_Number %>% str_remove("ย") 
+
+pokemon$Name <- pokemon$Name %>% str_remove("™€")
+pokemon$Name <- pokemon$Name %>% str_remove("โ€")
+pokemon$Name <- pokemon$Name %>% str_remove("โ")
+
+pokemon$Pokemon_Number <- pokemon$Pokemon_Number %>% str_trim()
+
+tabyl(pokemon$Type)
+
+describe(pokemon)
+
+range(pokemon$Total)
+range(pokemon$HP)
+range(pokemon$Attack)
+range(pokemon$Defense)
+range(pokemon$Special_Attack)
+range(pokemon$Special_Defense)
+range(pokemon$Speed)
 ```
 
 ## 1.
