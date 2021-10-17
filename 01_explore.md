@@ -147,7 +147,7 @@ Result
 ## 5. 
 Explain
 ```
-pokemon %>% select(Name,Speed,HP) %>% filter( pokemon$Speed < 50 ,pokemon$HP > 80) %>% distinct() %>% slice_head(n=5) %>% arrange(desc(Speed))
+pokemon %>% select(Name,Speed,HP) %>% filter( pokemon$Speed < 50 ,pokemon$HP > 80) %>% distinct() %>% arrange(desc(Speed)) %>% slice_head(n=5)
 ```
 Result
 ```
