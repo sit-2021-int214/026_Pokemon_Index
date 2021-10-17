@@ -23,10 +23,15 @@ Dataset from [pokemon_clean.csv](./pokemon_cleandata.csv)
 
 ```
 #library
+
+library(janitor)
 library(dplyr)
-library(readr)
-library(assertive)
 library(stringr)
+library(tidyr)
+library(assertive)
+library(readr)
+library(psych)
+
 #dataset
 pokemon <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/026_Pokemon_Index/main/pokemonIndex_original.csv")
 ```
