@@ -16,7 +16,7 @@ Dataset from [pokemon_clean.csv](./pokemon_cleandata.csv)
 2. Which pokemon type have the gratest average of special defense ?
 3. which pokemon have a highest and lowest speed and what the diffrent of two of them ?
 4. From the given index which pokemons types have a highest amount? and how much is it ?
-5. which pokemon(s) have a hp is morethan and speed lower than 50 ? what is his/her type ? 
+5. which pokemon(s) have a hp is morethan 80 and speed lower than 50 ? what is his/her type ? 
 6. Find the lowest speed pokemon that total(power) is morethan 600
 
 ## Step 0 Loading library and dataset
