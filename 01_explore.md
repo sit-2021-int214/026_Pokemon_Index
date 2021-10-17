@@ -24,6 +24,9 @@ Dataset from [pokemon_clean.csv](./pokemon_cleandata.csv)
 ```
 #library
 library(dplyr)
+library(readr)
+library(assertive)
+library(stringr)
 #dataset
 pokemon <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/026_Pokemon_Index/main/pokemonIndex_original.csv")
 ```
@@ -114,62 +117,16 @@ Result
 ## 5. 
 Explain
 ```
-pokemon %>% select(Name,Type,Speed,HP) %>% filter( pokemon$Speed < 50 ,pokemon$HP > 80) 
+pokemon %>% select(Name,Speed,HP) %>% filter( pokemon$Speed < 50 ,pokemon$HP > 80) %>% distinct() %>% slice_head(n=5) %>% arrange(desc(Speed))
 ```
 Result
 ```
-             Name     Type Speed  HP
-1      Jigglypuff   NORMAL    20 115
-2      Jigglypuff    FAIRY    20 115
-3      Wigglytuff   NORMAL    45 140
-4      Wigglytuff    FAIRY    45 140
-5        Slowpoke    WATER    15  90
-6        Slowpoke  PSYCHIC    15  90
-7         Slowbro    WATER    30  95
-8         Slowbro  PSYCHIC    30  95
-9       Lickitung   NORMAL    30  90
-10         Rhydon   GROUND    40 105
-11         Rhydon     ROCK    40 105
-12        Snorlax   NORMAL    30 160
-13      Igglybuff   NORMAL    15  90
-14      Igglybuff    FAIRY    15  90
-15  Mega Ampharos ELECTRIC    45  90
-16  Mega Ampharos   DRAGON    45  90
-17       Quagsire    WATER    35  95
-18       Quagsire   GROUND    35  95
-19       Slowking    WATER    30  95
-20       Slowking  PSYCHIC    30  95
-21      Wobbuffet  PSYCHIC    33 190
-22      Dunsparce   NORMAL    45 100
-23       Granbull    FAIRY    45  90
-24         Phanpy   GROUND    40  90
-25        Loudred   NORMAL    48  84
-26        Cradily     ROCK    43  86
-27        Cradily    GRASS    43  86
-28         Wynaut  PSYCHIC    23  95
-29         Sealeo      ICE    45  90
-30         Sealeo    WATER    45  90
-31      Gastrodon    WATER    39 111
-32      Gastrodon   GROUND    39 111
-33        Happiny   NORMAL    30 100
-34       Munchlax   NORMAL     5 135
-35      Hippowdon   GROUND    47 108
-36 Mega Abomasnow    GRASS    30  90
-37 Mega Abomasnow      ICE    30  90
-38      Rhyperior   GROUND    40 115
-39      Rhyperior     ROCK    40 115
-40       Musharna  PSYCHIC    29 116
-41       Gigalith     ROCK    25  85
-42        Gurdurr FIGHTING    40  85
-43     Conkeldurr FIGHTING    45 105
-44          Throh FIGHTING    45 120
-45      Reuniclus  PSYCHIC    30 110
-46      Amoonguss    GRASS    30 114
-47      Amoonguss   POISON    30 114
-48       Stunfisk ELECTRIC    32 109
-49       Stunfisk   GROUND    32 109
-50     Aromatisse    FAIRY    29 101
-51        Avalugg      ICE    28  95
+        Name Speed  HP
+1 Wigglytuff    45 140
+2    Slowbro    30  95
+3  Lickitung    30  90
+4 Jigglypuff    20 115
+5   Slowpoke    15  90
 ```
 
 ## 6.
