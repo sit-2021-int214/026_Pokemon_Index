@@ -16,7 +16,7 @@ Dataset from [pokemon_clean.csv](./pokemon_cleandata.csv)
 2. Which pokemon type have the gratest average of special defense ?
 3. which pokemon have a highest and lowest speed and what the diffrent of two of them ?
 4. From the given index which pokemons types have a highest amount? and how much is it ?
-5. which pokemon(s) have a hp is morethan 80 and speed lower than 50 ? what is his/her type ? 
+5. which pokemon(s) have a hp is morethan 80 and speed lower than 50 ? What are the top 5 ? 
 6. Find the lowest speed pokemon that total(power) is morethan 600
 
 ## Step 0 Loading library and dataset
@@ -84,7 +84,8 @@ Result
 2 248.1          Mega Tyranitar DARK    700   100    164     150             95             120    71
 3 717            Yveltal        DARK    680   126    131      95            131              98    99
 ```
-
+Description
+- Mega Gyarados, Mega Tyranitar, Yveltal ทั้ง 3 ตัว เป็นโปรเกมอนธาตุมืดที่มีtotal(power)มากกว่า 600 ครั้ง
 
 ## 2.
 
@@ -100,7 +101,8 @@ Result
      Type Average_Speed_Defense
 1 PSYCHIC              84.37349
 ```
-
+Description
+- โปรเกมอนธาตุพลังจิตมีค่าเฉลี่ยการป้องกันสูงที่สุด อยู่ที่ 84.37349
 
 ## 3. 
 
@@ -129,6 +131,8 @@ Result
 > max(pokemon$Speed)-min(pokemon$Speed)
 [1] 175
 ```
+Description
+- Shuckle, Munchlax มีค่าความเร็วต่ำที่สุดคือ 5 เเละ Deoxys- Speed Forme มีค่าความเร็วสูงที่สุดคือ 180 โดยทั้ง 2 ค่า มีความต่างอยู่ที่ 175
 
 ## 4.
 Explain
@@ -143,6 +147,8 @@ Result
    Type Amount
 1 WATER    122
 ```
+Description
+- โปรเกมอนที่เป็นธาตุน้ำมีจำนวนสูงที่สุด โดยมีจำนวน 122 ตัว
 
 ## 5. 
 Explain
@@ -158,6 +164,8 @@ Result
 4 Jigglypuff    20 115
 5   Slowpoke    15  90
 ```
+Description
+- Wigglytuff, Slowbro, Lickitung, Jigglypuff, Slowpoke เป็น 5 อันดับเเรก ที่มีความเร็วต่ำกว่า 50 เเต่ HP มากกว่า 80
 
 ## 6.
 Explain
@@ -172,3 +180,5 @@ Result
   <chr>         <int> <int>
 1 Mega Ampharos   610    45
 ```
+Description
+- Mega Ampharos เป็นตัวที่มีค่าความเร็วต่ำที่สุดอยู่ที่ 45 เเต่มีtotal(power)มากกว่า 600 โดยมีอยู่ 610
