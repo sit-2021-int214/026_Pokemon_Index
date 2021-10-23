@@ -66,7 +66,6 @@ range(pokemon$Special_Attack)
 range(pokemon$Special_Defense)
 range(pokemon$Speed)
 ```
-
 Result
 
 ```
@@ -84,7 +83,21 @@ the range of pokemon's total special attack power is 10 and 194
 the range of pokemon's special defense power is      20 and 230
 the range of pokemon's total speed is                 5 and 180
 ```
-
+```
+> glimpse(pokemon)
+Rows: 1,168
+Columns: 10
+$ Pokemon_Number  <chr> " 001", " 001", " 002", " 002", ~
+$ Name            <chr> "Bulbasaur", "Bulbasaur", "Ivysa~
+$ Type            <chr> "GRASS", "POISON", "GRASS", "POI~
+$ Total           <int> 318, 318, 405, 405, 525, 525, 62~
+$ HP              <int> 45, 45, 60, 60, 80, 80, 80, 80, ~
+$ Attack          <int> 49, 49, 62, 62, 82, 82, 100, 100~
+$ Defense         <int> 49, 49, 63, 63, 83, 83, 123, 123~
+$ Special_Attack  <int> 65, 65, 80, 80, 100, 100, 122, 1~
+$ Special_Defense <int> 65, 65, 80, 80, 100, 100, 120, 1~
+$ Speed           <int> 45, 45, 60, 60, 80, 80, 80, 80, ~
+```
 ## 1. find the dark's pokemon(s)that have a total(power) morethan 600
 
 Explain here
