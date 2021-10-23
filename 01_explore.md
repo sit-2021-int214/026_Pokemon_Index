@@ -66,7 +66,7 @@ range(pokemon$Special_Defense)
 range(pokemon$Speed)
 ```
 
-## 1.
+## 1. find the dark's pokemon(s)that have a total(power) morethan 600
 
 Explain here
 
@@ -87,7 +87,7 @@ Result
 Description
 - Mega Gyarados, Mega Tyranitar, Yveltal ทั้ง 3 ตัว เป็นโปรเกมอนธาตุมืดที่มีtotal(power)มากกว่า 600 ครั้ง
 
-## 2.
+## 2.Which pokemon type have the gratest average of special defense ?
 
 Explain here
 ```
@@ -104,7 +104,7 @@ Result
 Description
 - โปรเกมอนธาตุพลังจิตมีค่าเฉลี่ยการป้องกันสูงที่สุด อยู่ที่ 84.37349
 
-## 3. 
+## 3. which pokemon have a highest and lowest speed and what the diffrent of two of them ?
 
 Explain here
 ```
@@ -134,7 +134,7 @@ Result
 Description
 - Shuckle, Munchlax มีค่าความเร็วต่ำที่สุดคือ 5 เเละ Deoxys- Speed Forme มีค่าความเร็วสูงที่สุดคือ 180 โดยทั้ง 2 ค่า มีความต่างอยู่ที่ 175
 
-## 4.
+## 4. From the given index which pokemons types have a highest amount? and how much is it ?
 Explain
 ```
 pokemonType <- data.frame(table(pokemon$Type)) 
@@ -150,7 +150,7 @@ Result
 Description
 - โปรเกมอนที่เป็นธาตุน้ำมีจำนวนสูงที่สุด โดยมีจำนวน 122 ตัว
 
-## 5. 
+## 5. which pokemon(s) have a hp is morethan 80 and speed lower than 50 ? What are the top 5 ?
 Explain
 ```
 pokemon %>% select(Name,Speed,HP) %>% filter( pokemon$Speed < 50 ,pokemon$HP > 80) %>% distinct() %>% arrange(desc(Speed)) %>% slice_head(n=5)
@@ -167,7 +167,7 @@ Result
 Description
 - Wigglytuff, Slowbro, Lickitung, Jigglypuff, Slowpoke เป็น 5 อันดับเเรก ที่มีความเร็วต่ำกว่า 50 เเต่ HP มากกว่า 80
 
-## 6.
+## 6. Find the lowest speed pokemon that total(power) is morethan 600
 Explain
 ```
 pokemon  %>% select(Name,Total,Speed)%>% filter(pokemon$Total > 600,pokemon$Speed==min(pokemon$Speed[pokemon$Total>600]))%>%distinct 
