@@ -4,14 +4,27 @@ Original Datasets from: [Pokémon Index](https://www.kaggle.com/brendan45774/pok
 
 ### About's Pokémon Index Datasets
 
-This dataset is about all Pokemon characters. with the name of the character, Character type Attack, Defense, Speed, and HP stats
+This dataset is about all Pokemon characters. It's a full list of every Pokémon from all 8 generations of the Pokémon series, along with their main data andstats
+which are names, Character type,Total Power, Attack, Defense, Speed, and HP stats
 
-## Overview
+## Inspiration / Overview
 
-กลุ่มของเราเลือกข้อมูลชุดนี้เพราะต้องการศึกษาลักษณะ และความสามารถของโปเกมอนแต่ละตัว
-ว่าโปเกมอนแต่ละตัวนั้นมีค่าพลังต่าง ๆ มากน้อยขนาดไหน รวมถึงประเภทของโปเกมอนแต่ละตัวด้วย
-นอกจากจะสามารถศึกษาข้อมูลของโปเกมอนแต่ละตัวแล้ว
-ข้อมูลชุดนี้ยังสามารถศึกษาข้อมูลโปเกมอนอ้างอิงจากประเภทหรือธาตุของแต่ละตัวได้อีกด้วย
+We choose pokemon as our dataset because, pokemon is one of the most intersting cartoon
+their characters have specific name, characteristics, power and most of them when its turn to the dataset are in numeric value.
+This allow us to exploring the data of each pokemons
+Which pokemon have a highest powe? On the other hand which one is the lowest
+and also their type we can also applied the used of pokemon types as a tools to explore more deeply too.
+Our teams believing that explore the interesting data that we all like can bring higher quality of the work!
+
+
+## Explore topics
+
+1. find the dark's pokemon(s)that have a total(power) morethan 600
+2. Which pokemon type have the gratest average of special defense ?
+3. which pokemon have a highest and lowest speed and what the diffrent of two of them ?
+4. From the given index which pokemons types have a highest amount? and how much is it ?
+5. which pokemon(s) have a hp is morethan 80 and speed lower than 50 ? What are the top 5 ?
+6. Find the lowest speed pokemon that total(power) is morethan 600
 
 ### Steps
 
@@ -35,8 +48,8 @@ This dataset is about all Pokemon characters. with the name of the character, Ch
 ## Resources
 
 ### Important Files in Repository
-
-- [code_eda.R](./code_eda.R) : Exploratory Data Analysis
+- [01_explore.md](./01_explore.md) : Exploratory Data Analysis (Mark Down file)
+- [pokemonIndex.R](./pokemonIndex.R) : Exploratory Data Analysis
 - [pokemonIndex_original.csv](./pokemonIndex_original.csv): Original Dataset
 - [pokemon_clean.csv](./pokemon_clean.csv): Clean Dataset
 
