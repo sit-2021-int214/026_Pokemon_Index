@@ -18,6 +18,8 @@ Which pokemon have a highest powe? On the other hand which one is the lowest
 and also their type we can also applied the used of pokemon types as a tools to explore more deeply too.
 Our teams believing that explore the interesting data that we all like can bring higher quality of the work!
 
+![pokemonsub](https://github.com/sit-2021-int214/026_Pokemon_Index/blob/main/img/pokemon-pc-game-1-900x506.jpg)
+
 ## Column show in the cleaning data set
 
 1. `Pokemon_Number` : Number of Pokemons
