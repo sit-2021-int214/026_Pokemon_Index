@@ -16,6 +16,18 @@ Which pokemon have a highest powe? On the other hand which one is the lowest
 and also their type we can also applied the used of pokemon types as a tools to explore more deeply too.
 Our teams believing that explore the interesting data that we all like can bring higher quality of the work!
 
+## Column show in the cleaning data set
+
+1. `Pokemon_Number` : Number of Pokemons
+2. `Name` : Pokemons names
+3. `Type` : Type of each Pokemons
+4. `Total` : Total attack power of each Pokemons
+5. `HP` : Hp power each Pokemons
+6. `Attack` : How much attack power of each Pokemons
+7. `Defense` : How powerful defense is in each Pokemons
+8. `Special_Attack` : How much special attack is in each Pokemons
+9. `Special_Defense` : How much special defense is in each Pokemons
+10. `Speed` : What speed that each pokemons have
 
 ## Explore topics
 
