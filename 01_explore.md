@@ -4,10 +4,11 @@ Dataset from [pokemon_clean.csv](./pokemon_cleandata.csv)
 
 
 ### My Step
-1. Define a questionCancel changes
+1. Define a question
 2. Loading Library and dataset
-3. Finding the answer (result) from the given question
-4. Summarize the results and re-check for correact answers
+3. Clearing data by remove special characters in data, remove special characters in column name, change column name
+4. Finding the answer (result) from the given question
+5. Summarize the results and re-check for correact answers
 
 
 ## Define a question
@@ -64,6 +65,24 @@ range(pokemon$Defense)
 range(pokemon$Special_Attack)
 range(pokemon$Special_Defense)
 range(pokemon$Speed)
+```
+
+Result
+
+```
+final column name are :
+"Pokemon_Number"  "Name"            "Type"           
+"Total"           "HP"              "Attack"         
+"Defense"         "Special_Attack"  "Special_Defense"
+"Speed" 
+
+the range of pokemon's total power is               180 and 780.
+the range of pokemon's HP power is                    1 and 255
+the range of pokemon's attack power  power is         5 and 190
+the range of pokemon's defense power is               5 and 230
+the range of pokemon's total special attack power is 10 and 194
+the range of pokemon's special defense power is      20 and 230
+the range of pokemon's total speed is                 5 and 180
 ```
 
 ## 1. find the dark's pokemon(s)that have a total(power) morethan 600
