@@ -2,6 +2,8 @@
 
 Original Datasets from: [Pokémon Index](https://www.kaggle.com/brendan45774/pokmon-index-database?select=pokemon.csv)
 
+![pokemon](https://github.com/sit-2021-int214/026_Pokemon_Index/blob/main/img/1200px-International_Pok%C3%A9mon_logo.svg.png)
+
 ### About's Pokémon Index Datasets
 
 This dataset is about all Pokemon characters. It's a full list of every Pokémon from all 8 generations of the Pokémon series, along with their main data andstats
