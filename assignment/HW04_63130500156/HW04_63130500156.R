@@ -45,3 +45,6 @@ colnames(sales)
   pro <- sales %>% group_by(city) %>%  summarise(total_sales = sum(sales)) %>% filter(total_sales > 100000)
   product_plot2 <- pro %>% ggplot(aes(x = city , y = total_sales )) + geom_point()
   product_plot2 + ggtitle("Where City buy more than 100,000$")
+  
+  #SAVE CSV
+  write.csv(sales,"C:/Users/Administrator/Desktop/sales.csv", row.names=FALSE)
