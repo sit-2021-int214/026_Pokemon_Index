@@ -29,22 +29,41 @@ alpha = 0.05
 Step 3: Test statistic
 
 ```
-
+z_total <- (mean_total - 600)/(sd_total/sqrt(1169)) #32.03
 ```
 
 Step 4: Finding P-value approach or Critical Value approach
 
 ```
-
+# P-value
+pvalue_total <- pnorm(z_total) 
+# Critical Value 
+zalpha_total <- qnorm(0.05)
 ```
 
 Step 5: Compare
 
 ```
-
+if(pvalue_total<=0.05){
+  print("Reject H0")
+}else{
+  print("Accept H0")
+}
+# Using critical value
+if(z_total<=zalpha_total){
+  print("Reject H0")
+}else{
+  print("Accept H0")
+}
+```
+result
+```
+[1] "Accept H0"
+----------------
+[1] "Accept H0"
 ```
 
 Step 6: Conclusion
 ```
-
+การที่โปเกมอนจะมีค่าพลังงานรวมอยู่ที่ 100 อันดับเเรกนั้น จะต้องมีค่า Total มากกว่า 600
 ```
