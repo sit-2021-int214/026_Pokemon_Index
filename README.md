@@ -59,7 +59,7 @@ Our teams believing that explore the interesting data that we all like can bring
 ## Table of Contents
 
 1. [Exploratory Data Analysis](./01_explore.md)
-2. [Data Visualization]()
+2. [Analytical Inferential Statistics](./pokemon_hypothesisTesting.md)
 
 ## Resources
 
