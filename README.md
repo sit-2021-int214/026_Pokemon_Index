@@ -55,13 +55,18 @@ Our teams believing that explore the interesting data that we all like can bring
 
 - [R Studio Desktop](https://www.rstudio.com/)
 - [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel)
+- [Data Studio](https://datastudio.google.com)
 
 ## Table of Contents
 
 1. [Exploratory Data Analysis](./01_explore.md)
 2. [Analytical Inferential Statistics](./pokemon_hypothesisTesting.md)
 
+
 ## Resources
+1. [Pokemon Sheet](https://docs.google.com/spreadsheets/d/1m10t2Za9cGxzlBOojroUCRX46_5TbkoFXDcF6JEG6zo/edit?usp=sharing)
+2. [Data Studio](https://datastudio.google.com/s/jOp4W8SIFaw)
+3. [Presentation Slide](https://www.canva.com/design/DAEyco9Dne8/eCN0lRAhU5hhGT1yN70cXQ/view?utm_content=DAEyco9Dne8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 ### Important Files in Repository
 - [01_explore.md](./01_explore.md) : Exploratory Data Analysis (Mark Down file)
