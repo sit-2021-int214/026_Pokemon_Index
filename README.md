@@ -69,10 +69,12 @@ Our teams believing that explore the interesting data that we all like can bring
 3. [Presentation Slide](https://www.canva.com/design/DAEyco9Dne8/eCN0lRAhU5hhGT1yN70cXQ/view?utm_content=DAEyco9Dne8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 ### Important Files in Repository
-- [01_explore.md](./01_explore.md) : Exploratory Data Analysis (Mark Down file)
-- [pokemonIndex.R](./pokemonIndex.R) : Exploratory Data Analysis
+
 - [pokemonIndex_original.csv](./pokemonIndex_original.csv): Original Dataset
 - [pokemon_clean.csv](./pokemon_clean.csv): Clean Dataset
+- [01_explore.md](./01_explore.md) : Exploratory Data Analysis (Mark Down file)
+- [pokemonIndex.R](./pokemonIndex.R) : Exploratory Data Analysis (R file)
+- [pokemon_hypothesisTesting.md](./pokemon_hypothesisTesting.md): Hypothesis Statement
 
 ### References
 
