@@ -1,6 +1,6 @@
 # Analytical Inferential Statistics
 ## Hypothesis testing
-Top 100 pokemons (ranked by total power) will have Total power morethan 500 %
+Top 100 pokemons (ranked by total power) will have Total power morethan 500 
 by top 100 pokemons have an average (mean) equals to 617.44 and standard diviation is 46.9 (givan that alpha is 0.5)
 
 
