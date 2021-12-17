@@ -1,8 +1,8 @@
 # Analytical Inferential Statistics
 ## Hypothesis testing
+Top 100 pokemons (ranked by total power) will have Total power morethan 500 %
+by top 100 pokemons have an average (mean) equals to 617.44 and standard diviation is 46.9 (givan that alpha is 0.5)
 
-โปเกมอนที่มีค่าพลังงานสูงที่สุด 100 อันดับเเรก จะมีจำนวนค่าพลังรวม (Total) มากกว่า 500 
-โดยใน 100 อันดับเเรกจะมีค่าเฉลี่ยเท่ากับ 634.28 เเละส่วนเบี่ยงเบนมาตรฐานอยู่ที่ 46.78 (กำหนดค่า alpha = 0.5)
 
 Step 0: Assign variables
 
@@ -42,7 +42,7 @@ pvalue_total <- pnorm(z_total)
 zalpha_total <- qnorm(0.05)
 ```
 
-Step 5: Compare
+Step 5: Comparison statement
 
 ```
 if(pvalue_total<=0.05){
@@ -66,5 +66,5 @@ result
 
 Step 6: Conclusion
 
-การที่โปเกมอนจะมีค่าพลังงานรวมอยู่ที่ 100 อันดับเเรกนั้น จะต้องมีค่า Total มากกว่า 500 ทุกตัว
+From cacultion its can be summarize that, all top 100 pokemon order by total power have a total power more than 500.
 
