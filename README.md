@@ -64,9 +64,9 @@ Our teams believing that explore the interesting data that we all like can bring
 
 
 ## Resources
-1. [Pokemon Sheet](https://docs.google.com/spreadsheets/d/1m10t2Za9cGxzlBOojroUCRX46_5TbkoFXDcF6JEG6zo/edit?usp=sharing)
-2. [Data Studio](https://datastudio.google.com/s/jOp4W8SIFaw)
-3. [Presentation Slide](https://www.canva.com/design/DAEyco9Dne8/eCN0lRAhU5hhGT1yN70cXQ/view?utm_content=DAEyco9Dne8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+1. [Pokemon Sheet](https://docs.google.com/spreadsheets/d/1m10t2Za9cGxzlBOojroUCRX46_5TbkoFXDcF6JEG6zo/edit?usp=sharing) : Pokemon Index in google sheet
+2. [Data Studio](https://datastudio.google.com/s/jOp4W8SIFaw) : Pokemon data statics using data studio
+3. [Presentation Slide](https://www.canva.com/design/DAEyco9Dne8/eCN0lRAhU5hhGT1yN70cXQ/view?utm_content=DAEyco9Dne8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton) : Slide for presentation
 
 ### Important Files in Repository
 
